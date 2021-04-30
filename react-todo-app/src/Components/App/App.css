@@ -1,14 +1,18 @@
 .App{
-  /*background-image: url('../App/background_cover.jpeg');*/
+  background-image: url('../App/background_cover.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   height:100vh;
   width: auto;
   text-align: center;
   background-size: cover;
-  color: #d8c8c6;
+  color: #e34234;
   font-family: 'Dancing Script', cursive;
   font-size: 32px;
+}
+
+header{
+  filter: drop-shadow(8px 8px 10px #f87b7b);
 }
 
 /* font-family: 'Dancing Script', cursive;
