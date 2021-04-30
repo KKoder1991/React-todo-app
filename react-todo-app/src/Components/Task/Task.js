@@ -8,6 +8,10 @@ export default class Task extends React.Component {
 
     this.removeTask = this.removeTask.bind(this);
     this.markDone = this.markDone.bind(this);
+
+    this.state = {
+        backgroundColor: ' '
+    }
   }
 
   removeTask() {
@@ -30,7 +34,7 @@ export default class Task extends React.Component {
             <h2 className="task-term">{this.props.text}</h2>
           </div>
           <div className="task-buttons">
-            <button className="completed-button" onClick={this.markDone}>
+            <button className="done-button" onClick={this.markDone}>
               +
             </button>
             <button className="delete-button" onClick={this.removeTask}>
