@@ -6,6 +6,10 @@
   width: auto;
   text-align: center;
   background-size: cover;
-  color: #d8c8c6
-
+  color: #d8c8c6;
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;;
 }
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Poppins', sans-serif; */
