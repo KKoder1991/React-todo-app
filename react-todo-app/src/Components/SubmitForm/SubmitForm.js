@@ -2,7 +2,6 @@ import React from 'react';
 import './SubmitForm.css';
 
 export default class SubmitForm extends React.Component{
-
     constructor(props){
         super(props);
         this.state = { tasksCount: 0};
@@ -20,7 +19,7 @@ export default class SubmitForm extends React.Component{
 
             this.props.addTask(newItem);
 
-            this.state.tasksCount++;
+            this.setState.tasksCount++;
             this._inputElement.value = "";
         }
 
@@ -30,8 +29,8 @@ export default class SubmitForm extends React.Component{
     render(){
         return(
             <div className='submit-form-container'>
-                <form className="submit-form">
-                    <input className="input" type="text" placeholder="Add a task"></input>
+                <form onSubmit={this.addItem}>
+                    <input className="input" type="text" placeholder="Add a task" ref={(a) => this._inputElement = a}></input>
                     <button className="submit-button" type="submit">Add</button>
                 </form>
             </div>
