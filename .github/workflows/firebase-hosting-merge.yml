@@ -11,11 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TO_DO_LIST1991 }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACT_TODO_V3 }}'
           channelId: live
-          projectId: to-do-list1991
+          projectId: react-todo-v3
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
